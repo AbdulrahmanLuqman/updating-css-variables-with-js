@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+body{
+    text-align: center;
+}
+
+body{
+    background-color: #193549;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+
+
+img[alt="Image"]{
+    width: 30rem;
+    padding: var(--spacing);
+    background-color: var(--color);
+    filter: blur(var(--blur));
+}
+
+@media (max-width:1024px) {
+    body{
+        font-size: 30px;
+    }
+
+    img[alt="Image"]{
+        width: 20rem;
+    }
+}
+
+.hl{
+    color: var(--color);
+}
